@@ -5,7 +5,7 @@ test('ValidateLogin', async ({page, loginpage, productlistpage, cartpage })=>{
 
     await page.goto(TEST_DATA.urls.inventory);
     expect (await page).toHaveURL(TEST_DATA.urls.inventory);
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(3000);
 })
 
 test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=>{
@@ -17,7 +17,7 @@ test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=
     await productlistpage.clickCartIcon();
     expect(await page).toHaveURL('https://www.saucedemo.com/cart.html');
 
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(3000);
 
 })
 
@@ -31,6 +31,6 @@ test('ValidateCartItem', async ({page, loginpage, productlistpage, cartpage})=>{
 
     expect (await cartpage.cartProduct).toHaveText('Sauce Labs Backpack');
 
-    await page.waitForTimeout(2000);   
+    await page.waitForTimeout(3000);   
 
 })
