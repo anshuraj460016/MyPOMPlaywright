@@ -11,8 +11,12 @@ test('ValidateLogin', async ({page, loginpage, productlistpage, cartpage })=>{
 test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=>{
 
     await page.goto(TEST_DATA.urls.inventory);
-           
+    
+    await productlistpage.waitForPageLoad();
     await productlistpage.clickAddtoCartbuton();
+
+    await productlistpage.header.openandCloseBurger();
+
     expect (await productlistpage.cartBadgeIcon).toHaveText('1');
     await productlistpage.clickCartIcon();
     expect(await page).toHaveURL('https://www.saucedemo.com/cart.html');
@@ -24,13 +28,17 @@ test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=
 test('ValidateCartItem', async ({page, loginpage, productlistpage, cartpage})=>{
     
     await page.goto(TEST_DATA.urls.inventory);
+    
     await productlistpage.clickAddtoCartbuton();
     expect (await productlistpage.cartBadgeIcon).toHaveText('1');
     await productlistpage.clickCartIcon();
     expect(await page).toHaveURL('https://www.saucedemo.com/cart.html');
 
     expect (await cartpage.cartProduct).toHaveText('Sauce Labs Backpack');
+    
+    await cartpage.header.openandCloseBurger();
 
     await page.waitForTimeout(2000);   
 
 })
+

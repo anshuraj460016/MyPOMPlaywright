@@ -1,15 +1,21 @@
 import { Page, Locator } from "@playwright/test";
+import { HeaderComponent } from "../components/HeaderComponent";
+import { BasePage } from "./basepage";
 
-export class ProductListPage
+
+export class ProductListPage extends BasePage
 {
-   page: Page;
+   //page: Page;
    addToCartButton: Locator;
    cartBadgeIcon: Locator;
-   cartIcon: Locator;
+   cartIcon: Locator; 
+   //header: HeaderComponent;
 
    constructor(page: Page)
    {
+     super(page);
      this.page = page;
+     //this.header = new HeaderComponent(page);
      this.addToCartButton = page.locator('#add-to-cart-sauce-labs-backpack');
      this.cartBadgeIcon = page.locator('.shopping_cart_badge');
      this.cartIcon = page.locator('.shopping_cart_link');

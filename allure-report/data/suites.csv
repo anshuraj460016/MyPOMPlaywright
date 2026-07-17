@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9321","ValidateAddToCart","chromium","2026-07-11","passed","2026-07-11","","SauceDemoTests.spec.ts","",""
+"","6762","Valid Login","chromium","2026-07-07","passed","2026-07-07","","login.spec.ts","",""
+"","5751","ValidateLogin","chromium","2026-07-11","passed","2026-07-11","","SauceDemoTests.spec.ts","",""
+"","8578","ValidateCartItem","chromium","2026-07-11","passed","2026-07-11","","SauceDemoTests.spec.ts","",""
+"","3768","authenticateuser","setup","2026-07-11","passed","2026-07-11","","global.setup.ts","",""
+"","7105","Valid Login","chromium-login","2026-07-07","passed","2026-07-07","","login.spec.ts","",""
