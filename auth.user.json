@@ -17,11 +17,19 @@
       "localStorage": [
         {
           "name": "backtrace-guid",
+<<<<<<< HEAD
           "value": "0e70a09e-a284-4f4a-bb6d-618137765fc3"
         },
         {
           "name": "backtrace-last-active",
           "value": "1783764248917"
+=======
+          "value": "30a71b9c-fa74-4210-9d51-42e3d5c7acef"
+        },
+        {
+          "name": "backtrace-last-active",
+          "value": "1784304841356"
+>>>>>>> 80ff1689e2439d30fd591461ead265c7f7323554
         }
       ]
     }
