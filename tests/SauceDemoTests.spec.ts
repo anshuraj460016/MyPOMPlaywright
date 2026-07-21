@@ -1,6 +1,7 @@
 import { TEST_DATA } from '../data/testData';
 import {test, expect} from '../fixture/pageObjectFixture'
 
+//Test Case1
 test('ValidateLogin', async ({page, loginpage, productlistpage, cartpage })=>{
 
     await page.goto(TEST_DATA.urls.inventory);
@@ -8,6 +9,7 @@ test('ValidateLogin', async ({page, loginpage, productlistpage, cartpage })=>{
     await page.waitForTimeout(2000);
 })
 
+//Test Case2
 test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=>{
 
     await page.goto(TEST_DATA.urls.inventory);
