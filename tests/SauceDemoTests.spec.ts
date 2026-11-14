@@ -27,7 +27,7 @@ test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=
 
 })
 
-//3rd TEST Case
+//3rd TEST Case run
 
 test('ValidateCartItem', async ({page, loginpage, productlistpage, cartpage})=>{
     
@@ -42,7 +42,7 @@ test('ValidateCartItem', async ({page, loginpage, productlistpage, cartpage})=>{
     
     await cartpage.header.openandCloseBurger();
 
-    await page.waitForTimeout(2000);   
+    await page.waitForTimeout(3000);   
 
 })
 
