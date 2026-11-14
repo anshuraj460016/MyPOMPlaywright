@@ -6,10 +6,10 @@ test('ValidateLogin', async ({page, loginpage, productlistpage, cartpage })=>{
 
     await page.goto(TEST_DATA.urls.inventory);
     expect (await page).toHaveURL(TEST_DATA.urls.inventory);
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(3000);
 })
 
-//Test Case2
+//Test Case2  
 test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=>{
 
     await page.goto(TEST_DATA.urls.inventory);
@@ -27,7 +27,7 @@ test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=
 
 })
 
-//3rd TEST case
+//3rd TEST Case
 
 test('ValidateCartItem', async ({page, loginpage, productlistpage, cartpage})=>{
     
