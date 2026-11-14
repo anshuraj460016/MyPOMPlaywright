@@ -27,6 +27,8 @@ test('ValidateAddToCart' , async ({page, loginpage, productlistpage, cartpage})=
 
 })
 
+//3rd TEST case
+
 test('ValidateCartItem', async ({page, loginpage, productlistpage, cartpage})=>{
     
     await page.goto(TEST_DATA.urls.inventory);
